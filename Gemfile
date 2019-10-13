@@ -58,4 +58,4 @@ gem 'faker', '~> 2.6'
 
 group :development do
   gem 'devise', '~> 4.2'
-end 
+end
