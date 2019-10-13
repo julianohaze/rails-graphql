@@ -54,8 +54,10 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'faker', '~> 2.6'
-
 group :development do
   gem 'devise', '~> 4.2'
 end
+
+gem 'faker', '~> 2.6'
+gem 'graphql', '~> 1.9', '>= 1.9.13'
+gem 'graphiql-rails', group: :development
