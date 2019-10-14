@@ -14,13 +14,13 @@ module Types
     field :me, Types::UserType, null: false,
       description: "the current user"
     def me
-      User.first
+      context[:current_user]
     end
 
     field :projects, [Types::ProjectType], null: false,
           description: "the projects for the current user"
     def projects
-      Project.all
+      context[:current_user].projects
     end
 
   end

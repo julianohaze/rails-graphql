@@ -9,9 +9,10 @@ module Types
           null: false,
           description: "The project title"
 
-    def title
-      object.title + ' ' + object.user.email
-    end
+    field :user,
+          UserType,
+          null: false,
+          description: "The user"
 
   end
 end
