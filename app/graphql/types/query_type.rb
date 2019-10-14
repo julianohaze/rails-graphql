@@ -18,7 +18,7 @@ module Types
     end
 
     field :projects, [Types::ProjectType], null: false,
-          description: "the projects  for the current user"
+          description: "the projects for the current user"
     def projects
       Project.all
     end
